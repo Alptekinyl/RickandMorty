@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/settings" />
+
+    <Button
+        android:id="@+id/stopMusicBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="160dp"
+        android:text="Müziği Durdur"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <Button
+        android:id="@+id/normalDifficultyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopMusicBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Normal Difficulty"
+        app:layout_constraintBottom_toTopOf="@+id/hardDifficultyBtn"
+        app:layout_constraintTop_toBottomOf="@+id/stopMusicBtn"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <Button
+        android:id="@+id/hardDifficultyBtn"
+        android:layout_width="151dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/normalDifficultyBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="348dp"
+        android:text="Hard Difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <Button
+        android:id="@+id/veryHardDifficultyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hardDifficultyBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Very Hard Difficulty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardDifficultyBtn"
+        app:layout_constraintVertical_bias="0.034"
+        tools:layout_editor_absoluteX="99dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oyun zorluk"
+        android:textColor="#E4CACA"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
